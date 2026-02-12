@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Italianno&family=MonteCarlo&family=Pacifico&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <!-- Envelope Screen -->
+    <div id="envelope-container">
+      <img src="envelope.png" alt="Envelope" id="envelope" />
+      <p class="pacifico-regular">♡ You have a letter from Barcelona written by Karthickeyan SR ♡</p>
+    </div>
+
+    <!-- Letter Screen -->
+    <div id="letter-container">
+      <div class="letter-window">
+        <h1 id="letter-title" class="pacifico-regular">Will you be my Valentine kuttima?</h1>
+        <img src="cat_heart.gif" class="cat" id="letter-cat" />
+        <div class="buttons" id="letter-buttons">
+          <img src="yes.png" class="btn yes-btn" alt="Yes" />
+          <div class="no-wrapper">
+            <img src="no.png" class="btn no-btn" alt="No" />
+          </div>
+        </div>
+        <p id="final-text" class="pacifico-regular" style="display: none; margin-top: 0;">
+          <strong style="font-size: 1.1em; display: block; margin: 0 0 2px 0;">It's a date!</strong>
+          <span style="font-size: 0.75em; display: block; margin: 0; line-height: 1.1;">
+            Virtual culinary romance:<br>
+            <span style="font-size: 0.85em; display: block; margin: 0; text-align: center;">JehKay Cooking & Movie night</span><br>
+            <span style="font-size: 0.85em; display: block; margin: 0; text-align: center;">February 14th, 2026</span>
+          </span>
+        </p>
+      </div>
+    </div>
+
+    <!-- Background Slideshow -->
+    <div id="background-slideshow">
+      <div class="slideshow-image" style="background-image: url('gunasports2.jpg');"></div>
+      <div class="slideshow-image" style="background-image: url('gunasports1.jpg');"></div>
+      <div class="slideshow-image" style="background-image: url('gunasports3.jpg');"></div>
+    </div>
+
+    <audio id="bgAudio" autoplay loop>
+      <source src="background-music.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="letterAudio">
+      <source src="letter-music.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="yesAudio">
+      <source src="yes-music.mp3" type="audio/mpeg">
+    </audio>
+    <script src="script.js"></script>
+  </body>
+</html>
